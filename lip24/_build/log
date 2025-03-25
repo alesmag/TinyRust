@@ -1,0 +1,366 @@
+# dune test
+# OCAMLPARAM: unset
+# Shared cache: enabled-except-user-rules
+# Shared cache location: /home/alesmag/.cache/dune/db
+# Workspace root: "/home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di
+# Programmazione/tinyrust/lip24"
+# Auto-detected concurrency: 16
+# Dune context:
+#  { name = "default"
+#  ; kind = "default"
+#  ; profile = Dev
+#  ; merlin = true
+#  ; fdo_target_exe = None
+#  ; build_dir = In_build_dir "default"
+#  ; instrument_with = []
+#  }
+$ /home/alesmag/.opam/default/bin/ocamlc.opt -config > /tmp/dune_faba14_output
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/trace.ml) > _build/default/lib/.lip24Lib.objs/lip24Lib__Trace.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/ast.ml) > _build/default/lib/.lip24Lib.objs/lip24Lib__Ast.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/common.ml) > _build/default/lib/.lip24Lib.objs/lip24Lib__Common.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I test/.test.objs/byte -no-alias-deps -opaque -o test/.test.objs/byte/test.cmo -c -impl test/test.ml-gen)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/main.ml) > _build/default/lib/.lip24Lib.objs/lip24Lib__Main.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/memory.ml) > _build/default/lib/.lip24Lib.objs/lip24Lib__Memory.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -no-alias-deps -opaque -o lib/.lip24Lib.objs/byte/lip24Lib.cmo -c -impl lib/lip24Lib.ml-gen)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamllex -q -o lib/lexer.ml lib/lexer.mll)
+$ (cd _build/.sandbox/42ae1723f31c5084a900252d95374029/default && /home/alesmag/.opam/default/bin/menhir --explain --dump lib/parser.mly --base lib/parser --infer-write-query lib/parser__mock.ml.mock)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I test/.test.objs/byte -I test/.test.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o test/.test.objs/native/test.cmx -c -impl test/test.ml-gen)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -49 -nopervasives -nostdlib -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -intf-suffix .ml-gen -no-alias-deps -opaque -o lib/.lip24Lib.objs/native/lip24Lib.cmx -c -impl lib/lip24Lib.ml-gen)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/byte/lip24Lib__Ast.cmo -c -impl lib/ast.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/lexer.ml) > _build/default/lib/.lip24Lib.objs/lip24Lib__Lexer.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I /home/alesmag/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/native/lip24Lib__Ast.cmx -c -impl lib/ast.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/byte/lip24Lib__Memory.cmo -c -impl lib/memory.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/byte/lip24Lib__Common.cmo -c -impl lib/common.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/parser__mock.ml.mock) > _build/default/lib/.lip24Lib.objs/parser__mock.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I /home/alesmag/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/native/lip24Lib__Memory.cmx -c -impl lib/memory.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I /home/alesmag/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/native/lip24Lib__Common.cmx -c -impl lib/common.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/byte/lip24Lib__Trace.cmo -c -impl lib/trace.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -g -w -24 -I .ppx/423b3c0918a91461d11b9cd1259aca91 -I /home/alesmag/.opam/default/lib/base -I /home/alesmag/.opam/default/lib/base/base_internalhash_types -I /home/alesmag/.opam/default/lib/base/shadow_stdlib -I /home/alesmag/.opam/default/lib/jane-street-headers -I /home/alesmag/.opam/default/lib/ocaml-compiler-libs/common -I /home/alesmag/.opam/default/lib/ocaml-compiler-libs/shadow -I /home/alesmag/.opam/default/lib/ocaml/compiler-libs -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel -I /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_derivers -I /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_expect -I /home/alesmag/.opam/default/lib/ppx_expect/config -I /home/alesmag/.opam/default/lib/ppx_expect/config_types -I /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file -I /home/alesmag/.opam/default/lib/ppx_expect/runtime -I /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_here/expander -I /home/alesmag/.opam/default/lib/ppx_inline_test -I /home/alesmag/.opam/default/lib/ppx_inline_test/config -I /home/alesmag/.opam/default/lib/ppx_inline_test/libname -I /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/alesmag/.opam/default/lib/ppxlib -I /home/alesmag/.opam/default/lib/ppxlib/ast -I /home/alesmag/.opam/default/lib/ppxlib/astlib -I /home/alesmag/.opam/default/lib/ppxlib/print_diff -I /home/alesmag/.opam/default/lib/ppxlib/stdppx -I /home/alesmag/.opam/default/lib/ppxlib/traverse_builtins -I /home/alesmag/.opam/default/lib/sexplib0 -I /home/alesmag/.opam/default/lib/stdio -I /home/alesmag/.opam/default/lib/stdlib-shims -I /home/alesmag/.opam/default/lib/time_now -no-alias-deps -o .ppx/423b3c0918a91461d11b9cd1259aca91/dune__exe___ppx.cmo -c -impl .ppx/423b3c0918a91461d11b9cd1259aca91/_ppx.ml-gen)
+$ (cd _build/.sandbox/1cac45d7cc76b0289a6cb894709c9173/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -open Lip24Lib -short-paths -i -impl lib/parser__mock.ml.mock) > _build/.sandbox/1cac45d7cc76b0289a6cb894709c9173/default/lib/parser__mock.mli.inferred
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -g -w -24 -I .ppx/423b3c0918a91461d11b9cd1259aca91 -I /home/alesmag/.opam/default/lib/base -I /home/alesmag/.opam/default/lib/base/base_internalhash_types -I /home/alesmag/.opam/default/lib/base/shadow_stdlib -I /home/alesmag/.opam/default/lib/jane-street-headers -I /home/alesmag/.opam/default/lib/ocaml-compiler-libs/common -I /home/alesmag/.opam/default/lib/ocaml-compiler-libs/shadow -I /home/alesmag/.opam/default/lib/ocaml/compiler-libs -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel -I /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_derivers -I /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_expect -I /home/alesmag/.opam/default/lib/ppx_expect/config -I /home/alesmag/.opam/default/lib/ppx_expect/config_types -I /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file -I /home/alesmag/.opam/default/lib/ppx_expect/runtime -I /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_here/expander -I /home/alesmag/.opam/default/lib/ppx_inline_test -I /home/alesmag/.opam/default/lib/ppx_inline_test/config -I /home/alesmag/.opam/default/lib/ppx_inline_test/libname -I /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/alesmag/.opam/default/lib/ppxlib -I /home/alesmag/.opam/default/lib/ppxlib/ast -I /home/alesmag/.opam/default/lib/ppxlib/astlib -I /home/alesmag/.opam/default/lib/ppxlib/print_diff -I /home/alesmag/.opam/default/lib/ppxlib/stdppx -I /home/alesmag/.opam/default/lib/ppxlib/traverse_builtins -I /home/alesmag/.opam/default/lib/sexplib0 -I /home/alesmag/.opam/default/lib/stdio -I /home/alesmag/.opam/default/lib/stdlib-shims -I /home/alesmag/.opam/default/lib/time_now -intf-suffix .ml-gen -no-alias-deps -o .ppx/423b3c0918a91461d11b9cd1259aca91/dune__exe___ppx.cmx -c -impl .ppx/423b3c0918a91461d11b9cd1259aca91/_ppx.ml-gen)
+$ (cd _build/.sandbox/264424a24c5853027fbb9d77e3de7add/default && /home/alesmag/.opam/default/bin/menhir --explain --dump lib/parser.mly --base lib/parser --infer-read-reply lib/parser__mock.mli.inferred)
+> Warning: 13 states have shift/reduce conflicts.
+> Warning: 37 shift/reduce conflicts were arbitrarily resolved.
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -intf lib/parser.mli) > _build/default/lib/.lip24Lib.objs/lip24Lib__Parser.intf.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/byte/lip24Lib__Parser.cmi -c -intf lib/parser.mli)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I /home/alesmag/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/native/lip24Lib__Trace.cmx -c -impl lib/trace.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl lib/parser.ml) > _build/default/lib/.lip24Lib.objs/lip24Lib__Parser.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/byte/lip24Lib__Lexer.cmo -c -impl lib/lexer.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I lib/.lip24Lib.objs/byte -I /home/alesmag/.opam/default/lib/ocaml/str -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/byte/lip24Lib__Main.cmo -c -impl lib/main.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I /home/alesmag/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/native/lip24Lib__Lexer.cmx -c -impl lib/lexer.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I /home/alesmag/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/native/lip24Lib__Main.cmx -c -impl lib/main.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I /home/alesmag/.opam/default/lib/ocaml/str -intf-suffix .ml -no-alias-deps -opaque -open Lip24Lib -o lib/.lip24Lib.objs/native/lip24Lib__Parser.cmx -c -impl lib/parser.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o lib/lip24Lib.cmxa lib/.lip24Lib.objs/native/lip24Lib.cmx lib/.lip24Lib.objs/native/lip24Lib__Ast.cmx lib/.lip24Lib.objs/native/lip24Lib__Common.cmx lib/.lip24Lib.objs/native/lip24Lib__Memory.cmx lib/.lip24Lib.objs/native/lip24Lib__Trace.cmx lib/.lip24Lib.objs/native/lip24Lib__Parser.cmx lib/.lip24Lib.objs/native/lip24Lib__Lexer.cmx lib/.lip24Lib.objs/native/lip24Lib__Main.cmx)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -g -w -24 -o .ppx/423b3c0918a91461d11b9cd1259aca91/ppx.exe /home/alesmag/.opam/default/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/alesmag/.opam/default/lib/base/base_internalhash_types /home/alesmag/.opam/default/lib/sexplib0/sexplib0.cmxa /home/alesmag/.opam/default/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel/ocaml_intrinsics_kernel.cmxa -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel /home/alesmag/.opam/default/lib/base/base.cmxa -I /home/alesmag/.opam/default/lib/base /home/alesmag/.opam/default/lib/ocaml/compiler-libs/ocamlcommon.cmxa /home/alesmag/.opam/default/lib/ocaml-compiler-libs/common/ocaml_common.cmxa /home/alesmag/.opam/default/lib/ppxlib/astlib/astlib.cmxa /home/alesmag/.opam/default/lib/stdlib-shims/stdlib_shims.cmxa /home/alesmag/.opam/default/lib/ppxlib/ast/ppxlib_ast.cmxa /home/alesmag/.opam/default/lib/ocaml-compiler-libs/shadow/ocaml_shadow.cmxa /home/alesmag/.opam/default/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /home/alesmag/.opam/default/lib/ppx_derivers/ppx_derivers.cmxa /home/alesmag/.opam/default/lib/ppxlib/traverse_builtins/ppxlib_traverse_builtins.cmxa /home/alesmag/.opam/default/lib/ppxlib/stdppx/stdppx.cmxa /home/alesmag/.opam/default/lib/ppxlib/ppxlib.cmxa /home/alesmag/.opam/default/lib/stdio/stdio.cmxa /home/alesmag/.opam/default/lib/ppx_inline_test/config/inline_test_config.cmxa /home/alesmag/.opam/default/lib/jane-street-headers/jane_street_headers.cmxa /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /home/alesmag/.opam/default/lib/time_now/time_now.cmxa -I /home/alesmag/.opam/default/lib/time_now /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file/make_corrected_file.cmxa /home/alesmag/.opam/default/lib/ppx_expect/config_types/expect_test_config_types.cmxa /home/alesmag/.opam/default/lib/ppx_expect/config/expect_test_config.cmxa /home/alesmag/.opam/default/lib/ppx_expect/runtime/ppx_expect_runtime.cmxa -I /home/alesmag/.opam/default/lib/ppx_expect/runtime /home/alesmag/.opam/default/lib/ppx_inline_test/libname/ppx_inline_test_libname.cmxa /home/alesmag/.opam/default/lib/ppx_inline_test/ppx_inline_test.cmxa /home/alesmag/.opam/default/lib/ppx_here/expander/ppx_here_expander.cmxa /home/alesmag/.opam/default/lib/ppx_expect/ppx_expect.cmxa .ppx/423b3c0918a91461d11b9cd1259aca91/dune__exe___ppx.cmx)
+$ (cd _build/.sandbox/91be4bc34a8f858f503694f679f272e9/default && .ppx/423b3c0918a91461d11b9cd1259aca91/ppx.exe --cookie 'inline_tests="enabled"' --cookie 'library-name="test"' -o test/test_lip24.pp.ml --impl test/test_lip24.ml -corrected-suffix .ppx-corrected -diff-cmd - -dump-ast)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamldep.opt -modules -impl test/test_lip24.pp.ml) > _build/default/test/.test.objs/test__Test_lip24.impl.d
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -bin-annot -bin-annot-occurrences -I test/.test.objs/byte -I /home/alesmag/.opam/default/lib/base -I /home/alesmag/.opam/default/lib/base/base_internalhash_types -I /home/alesmag/.opam/default/lib/base/shadow_stdlib -I /home/alesmag/.opam/default/lib/jane-street-headers -I /home/alesmag/.opam/default/lib/ocaml/str -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel -I /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_expect/config -I /home/alesmag/.opam/default/lib/ppx_expect/config_types -I /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file -I /home/alesmag/.opam/default/lib/ppx_expect/runtime -I /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_here/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_inline_test/config -I /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/alesmag/.opam/default/lib/ppxlib/print_diff -I /home/alesmag/.opam/default/lib/sexplib0 -I /home/alesmag/.opam/default/lib/stdio -I /home/alesmag/.opam/default/lib/time_now -I lib/.lip24Lib.objs/byte -no-alias-deps -opaque -open Test -o test/.test.objs/byte/test__Test_lip24.cmo -c -impl test/test_lip24.pp.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlc.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -bin-annot -bin-annot-occurrences -I test/.test.inline-tests/.test.inline-tests.eobjs/byte -I /home/alesmag/.opam/default/lib/base -I /home/alesmag/.opam/default/lib/base/base_internalhash_types -I /home/alesmag/.opam/default/lib/base/shadow_stdlib -I /home/alesmag/.opam/default/lib/jane-street-headers -I /home/alesmag/.opam/default/lib/ocaml/str -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel -I /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_expect/config -I /home/alesmag/.opam/default/lib/ppx_expect/config_types -I /home/alesmag/.opam/default/lib/ppx_expect/evaluator -I /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file -I /home/alesmag/.opam/default/lib/ppx_expect/runtime -I /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_here/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_inline_test/config -I /home/alesmag/.opam/default/lib/ppx_inline_test/runner/lib -I /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/alesmag/.opam/default/lib/ppxlib/print_diff -I /home/alesmag/.opam/default/lib/sexplib0 -I /home/alesmag/.opam/default/lib/stdio -I /home/alesmag/.opam/default/lib/time_now -I lib/.lip24Lib.objs/byte -I test/.test.objs/byte -no-alias-deps -o test/.test.inline-tests/.test.inline-tests.eobjs/byte/dune__exe__Inline_test_runner_test.cmo -c -impl test/.test.inline-tests/inline_test_runner_test.ml-gen)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -I test/.test.objs/byte -I test/.test.objs/native -I /home/alesmag/.opam/default/lib/base -I /home/alesmag/.opam/default/lib/base/base_internalhash_types -I /home/alesmag/.opam/default/lib/base/shadow_stdlib -I /home/alesmag/.opam/default/lib/jane-street-headers -I /home/alesmag/.opam/default/lib/ocaml/str -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel -I /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_expect/config -I /home/alesmag/.opam/default/lib/ppx_expect/config_types -I /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file -I /home/alesmag/.opam/default/lib/ppx_expect/runtime -I /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_here/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_inline_test/config -I /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/alesmag/.opam/default/lib/ppxlib/print_diff -I /home/alesmag/.opam/default/lib/sexplib0 -I /home/alesmag/.opam/default/lib/stdio -I /home/alesmag/.opam/default/lib/time_now -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -intf-suffix .ml -no-alias-deps -opaque -open Test -o test/.test.objs/native/test__Test_lip24.cmx -c -impl test/test_lip24.pp.ml)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -I test/.test.inline-tests/.test.inline-tests.eobjs/byte -I test/.test.inline-tests/.test.inline-tests.eobjs/native -I /home/alesmag/.opam/default/lib/base -I /home/alesmag/.opam/default/lib/base/base_internalhash_types -I /home/alesmag/.opam/default/lib/base/shadow_stdlib -I /home/alesmag/.opam/default/lib/jane-street-headers -I /home/alesmag/.opam/default/lib/ocaml/str -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel -I /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_expect/config -I /home/alesmag/.opam/default/lib/ppx_expect/config_types -I /home/alesmag/.opam/default/lib/ppx_expect/evaluator -I /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file -I /home/alesmag/.opam/default/lib/ppx_expect/runtime -I /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_here/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_inline_test/config -I /home/alesmag/.opam/default/lib/ppx_inline_test/runner/lib -I /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib -I /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib -I /home/alesmag/.opam/default/lib/ppxlib/print_diff -I /home/alesmag/.opam/default/lib/sexplib0 -I /home/alesmag/.opam/default/lib/stdio -I /home/alesmag/.opam/default/lib/time_now -I lib/.lip24Lib.objs/byte -I lib/.lip24Lib.objs/native -I test/.test.objs/byte -I test/.test.objs/native -intf-suffix .ml-gen -no-alias-deps -o test/.test.inline-tests/.test.inline-tests.eobjs/native/dune__exe__Inline_test_runner_test.cmx -c -impl test/.test.inline-tests/inline_test_runner_test.ml-gen)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -g -a -o test/test.cmxa test/.test.objs/native/test.cmx test/.test.objs/native/test__Test_lip24.cmx)
+$ (cd _build/default && /home/alesmag/.opam/default/bin/ocamlopt.opt -w @1..3@5..28@31..39@43@46..47@49..57@61..62@67@69-40 -strict-sequence -strict-formats -short-paths -keep-locs -w -24 -g -g -o test/.test.inline-tests/inline_test_runner_test.exe /home/alesmag/.opam/default/lib/ocaml/str/str.cmxa lib/lip24Lib.cmxa /home/alesmag/.opam/default/lib/ppx_inline_test/config/inline_test_config.cmxa /home/alesmag/.opam/default/lib/base/base_internalhash_types/base_internalhash_types.cmxa -I /home/alesmag/.opam/default/lib/base/base_internalhash_types /home/alesmag/.opam/default/lib/sexplib0/sexplib0.cmxa /home/alesmag/.opam/default/lib/base/shadow_stdlib/shadow_stdlib.cmxa /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel/ocaml_intrinsics_kernel.cmxa -I /home/alesmag/.opam/default/lib/ocaml_intrinsics_kernel /home/alesmag/.opam/default/lib/base/base.cmxa -I /home/alesmag/.opam/default/lib/base /home/alesmag/.opam/default/lib/jane-street-headers/jane_street_headers.cmxa /home/alesmag/.opam/default/lib/ppx_sexp_conv/runtime-lib/ppx_sexp_conv_lib.cmxa /home/alesmag/.opam/default/lib/ppx_compare/runtime-lib/ppx_compare_lib.cmxa /home/alesmag/.opam/default/lib/ppx_enumerate/runtime-lib/ppx_enumerate_lib.cmxa /home/alesmag/.opam/default/lib/ppx_hash/runtime-lib/ppx_hash_lib.cmxa /home/alesmag/.opam/default/lib/time_now/time_now.cmxa -I /home/alesmag/.opam/default/lib/time_now /home/alesmag/.opam/default/lib/ppx_inline_test/runtime-lib/ppx_inline_test_lib.cmxa /home/alesmag/.opam/default/lib/ppx_here/runtime-lib/ppx_here_lib.cmxa /home/alesmag/.opam/default/lib/stdio/stdio.cmxa /home/alesmag/.opam/default/lib/ppxlib/print_diff/ppxlib_print_diff.cmxa /home/alesmag/.opam/default/lib/ppx_expect/make_corrected_file/make_corrected_file.cmxa /home/alesmag/.opam/default/lib/ppx_expect/config_types/expect_test_config_types.cmxa /home/alesmag/.opam/default/lib/ppx_expect/config/expect_test_config.cmxa /home/alesmag/.opam/default/lib/ppx_expect/runtime/ppx_expect_runtime.cmxa -I /home/alesmag/.opam/default/lib/ppx_expect/runtime test/test.cmxa /home/alesmag/.opam/default/lib/ppx_inline_test/runner/lib/ppx_inline_test_runner_lib.cmxa -I /home/alesmag/.opam/default/lib/ppx_inline_test/runner/lib /home/alesmag/.opam/default/lib/ppx_expect/evaluator/ppx_expect_evaluator.cmxa test/.test.inline-tests/.test.inline-tests.eobjs/native/dune__exe__Inline_test_runner_test.cmx -linkall)
+$ (cd _build/.sandbox/6a9ac281ab7f3ec0fe38d8ec97fd05c7/default/test && .test.inline-tests/inline_test_runner_test.exe inline-test-runner test -list-partitions) > _build/.sandbox/6a9ac281ab7f3ec0fe38d8ec97fd05c7/default/test/.test.inline-tests/partitions-best
+$ (cd _build/.sandbox/2ffb1016db9d5ec7b29c0d29eea08111/default/test && .test.inline-tests/inline_test_runner_test.exe inline-test-runner test -partition test_lip24.ml -source-tree-root .. -diff-cmd -)
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/01-print.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/02-intError.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/03-intOk.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/04-stringError.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/05-stringOk.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/06-scopeOk.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/07-scopeError.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/08-func.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/09-proc.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/10-ifThenElse.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/11-ownError.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/12-ownFnError.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/13-borrow.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/14-borrowFn.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/15-borrowError.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/16-borrowMut.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/17-borrowMutError.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/18-loop.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/19-loopBreak.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/20-loopNested.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/21-exprBlock.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/22-funExpr.rs
+> ✔ Parsed /home/alesmag/Nextcloud/UNICA/A3S1/LIP - Linguaggi di Programmazione/tinyrust/lip24/test/examples/23-scopeCheck.rs
+>
+>
+$ /usr/bin/git --no-pager diff --no-index --color=always -u _build/default/test/test_lip24.ml _build/.sandbox/2ffb1016db9d5ec7b29c0d29eea08111/default/test/test_lip24.ml.corrected
+> diff --git a/_build/default/test/test_lip24.ml b/_build/.sandbox/2ffb1016db9d5ec7b29c0d29eea08111/default/test/test_lip24.ml.corrected
+> index fa06e4d..d9de6fb 100644
+> --- a/_build/default/test/test_lip24.ml
+> +++ b/_build/.sandbox/2ffb1016db9d5ec7b29c0d29eea08111/default/test/test_lip24.ml.corrected
+> @@ -39,7 +39,269 @@ Array.iter2
+>  
+>      print_result "Output:" res;
+>      print_result "Expected:" test)
+> -  examples_dict tests
+> +  examples_dict tests;
+>  
+>  
+>  [@@ocamlformat "disable"]
+> +  [%expect {|
+> +    3
+> +    4
+> +    ------------------------
+> +    ✔ 01-print.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    3
+> +    4
+> +
+> +
+> +    ------------------------
+> +    ✔ 02-intError.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [CannotMutate] cannot mutate immutable variable x
+> +
+> +    Expected: Error
+> +    [CannotMutate] cannot mutate immutable variable x
+> +
+> +    7
+> +    ------------------------
+> +    ✔ 03-intOk.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    7
+> +
+> +
+> +    ------------------------
+> +    ✔ 04-stringError.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [CannotMutate] cannot mutate immutable variable x
+> +
+> +    Expected: Error
+> +    [CannotMutate] cannot mutate immutable variable x
+> +
+> +    Ciao, mondo
+> +    ------------------------
+> +    ✔ 05-stringOk.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    Ciao, mondo
+> +
+> +
+> +    6
+> +    3
+> +    ------------------------
+> +    ✔ 06-scopeOk.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    6
+> +    3
+> +
+> +
+> +    ------------------------
+> +    ✔ 07-scopeError.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [UnboundVar] y not defined in this scope
+> +
+> +    Expected: Error
+> +    [UnboundVar] y not defined in this scope
+> +
+> +    10
+> +    ------------------------
+> +    ✔ 08-func.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    10
+> +
+> +
+> +    7
+> +    ------------------------
+> +    ✔ 09-proc.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    7
+> +
+> +
+> +    dispari
+> +    ------------------------
+> +    ✔ 10-ifThenElse.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    dispari
+> +
+> +
+> +    ------------------------
+> +    ✔ 11-ownError.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [MovedValue] borrow of moved value x
+> +
+> +    Expected: Error
+> +    [MovedValue] borrow of moved value x
+> +
+> +    Ciao
+> +    ------------------------
+> +    ✔ 12-ownFnError.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [MovedValue] borrow of moved value x
+> +
+> +    Expected: Error
+> +    [MovedValue] borrow of moved value x
+> +
+> +    Ciao
+> +    Ciao
+> +    ------------------------
+> +    ✔ 13-borrow.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    Ciao
+> +    Ciao
+> +
+> +
+> +    il parametro prestato: Ciao
+> +    il parametro x: Ciao
+> +    ------------------------
+> +    ✔ 14-borrowFn.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    il parametro prestato: Ciao
+> +    il parametro x: Ciao
+> +
+> +
+> +    ------------------------
+> +    ✔ 15-borrowError.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [DataRace] cannot borrow x as mutable because it is also borrowed as immutable
+> +
+> +    Expected: Error
+> +    [DataRace] cannot borrow x as mutable because it is also borrowed as immutable
+> +
+> +    Ciao, mondo
+> +    Ciao, mondo
+> +    ------------------------
+> +    ✔ 16-borrowMut.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    Ciao, mondo
+> +    Ciao, mondo
+> +
+> +
+> +    ------------------------
+> +    ✔ 17-borrowMutError.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [MutBorrowOfNonMut] cannot borrow x as mutable, as it is not declared as mutable
+> +
+> +    Expected: Error
+> +    [MutBorrowOfNonMut] cannot borrow x as mutable, as it is not declared as mutable
+> +
+> +    ------------------------
+> +    ✔ 18-loop.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [OutOfGas] trace run out of gas (0)
+> +
+> +    Expected: Error
+> +    [OutOfGas] trace run out of gas (0)
+> +
+> +    3
+> +    2
+> +    1
+> +    0
+> +    ------------------------
+> +    ✔ 19-loopBreak.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    3
+> +    2
+> +    1
+> +    0
+> +
+> +
+> +    0,0
+> +    0,1
+> +    1,0
+> +    1,1
+> +    2,0
+> +    2,1
+> +    ------------------------
+> +    ✔ 20-loopNested.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    0,0
+> +    0,1
+> +    1,0
+> +    1,1
+> +    2,0
+> +    2,1
+> +
+> +
+> +    7
+> +    ------------------------
+> +    ✔ 21-exprBlock.rs
+> +    ------------------------
+> +    Output:   Ok
+> +
+> +
+> +    Expected: Ok
+> +    7
+> +
+> +
+> +    4
+> +    ------------------------
+> +    ✔ 22-funExpr.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [UnboundVar] interna not defined in this scope
+> +
+> +    Expected: Error
+> +    [UnboundVar] interna not defined in this scope
+> +
+> +    ------------------------
+> +    ✔ 23-scopeCheck.rs
+> +    ------------------------
+> +    Output:   Error
+> +    [UnboundVar] y not defined in this scope
+> +
+> +    Expected: Error
+> +    [UnboundVar] y not defined in this scope
+> +    |}]
+[1]

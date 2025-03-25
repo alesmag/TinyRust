@@ -1,0 +1,78 @@
+type token =
+    VAR of string
+  | TSTRING
+  | SUB
+  | STRING of string
+  | SEMICOLON
+  | RPAREN
+  | RBRACE
+  | PUSHSTR
+  | PRINTLN
+  | OR
+  | NEQ
+  | MUT
+  | MUL
+  | MOD
+  | LT
+  | LPAREN
+  | LOOP
+  | LET
+  | LEQ
+  | LBRACE
+  | IF
+  | I32
+  | GT
+  | GEQ
+  | FROM
+  | FN
+  | EQ
+  | EOF
+  | ELSE
+  | DIV
+  | CONST of string
+  | COMMA
+  | COL
+  | BREAK
+  | BORROW
+  | ASSIGNMENT
+  | ARROW
+  | AND
+  | ADD
+val seq_of_ins_list : Ast.program list -> Ast.program
+val menhir_begin_marker : int
+val xv_unary_expr : Ast.expression
+val xv_typ : Ast.typ
+val xv_separated_nonempty_list_COMMA_fpar_ : Ast.parameters
+val xv_separated_nonempty_list_COMMA_expression_ : Ast.expression list
+val xv_separated_nonempty_list_COMMA___anonymous_3_ : Ast.program list
+val xv_separated_nonempty_list_COMMA___anonymous_1_ : Ast.program list
+val xv_separated_list_COMMA_fpar_ : Ast.parameters
+val xv_separated_list_COMMA_expression_ : Ast.expression list
+val xv_return_expression : Ast.expression
+val xv_primary_expr : Ast.expression
+val xv_par_type : Ast.typ
+val xv_option_return_expression_ : Ast.expression option
+val xv_option___anonymous_2_ : Ast.expression option
+val xv_option___anonymous_0_ : Ast.expression option
+val xv_main : Ast.program
+val xv_loption_separated_nonempty_list_COMMA_fpar__ : Ast.parameters
+val xv_loption_separated_nonempty_list_COMMA_expression__ :
+  Ast.expression list
+val xv_list_instruction_ : Ast.program list
+val xv_list_definition_ : Ast.program list
+val xv_list_declaration_ : Ast.program list
+val xv_instruction : Ast.program
+val xv_function_definition : Ast.program
+val xv_fpar : string * Ast.typ
+val xv_expression : Ast.expression
+val xv_definition : Ast.program
+val xv_declaration : Ast.program
+val xv_compound_statement_function : Ast.program
+val xv_compound_statement : Ast.program
+val xv_block_expr : Ast.expression
+val xv_binary_expr : Ast.expression
+val xv___anonymous_3 : Ast.program
+val xv___anonymous_2 : Ast.expression
+val xv___anonymous_1 : Ast.program
+val xv___anonymous_0 : Ast.expression
+val menhir_end_marker : int
