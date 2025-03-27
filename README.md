@@ -29,6 +29,7 @@ This project was intended to be a Rust compiler built entirely with OCaml. The s
 ## Requirements
 
 TinyRust requires:
+- Opam
 - OCaml
 - Dune
 
@@ -36,22 +37,22 @@ TinyRust requires:
 
 #### Ubuntu/Debian
 ```sh
-sudo apt update && sudo apt install -y dune
+sudo apt update && sudo apt install -y opam
 ```
 
 #### Fedora
 ```sh
-sudo dnf install -y dune
+sudo dnf install -y opam
 ```
 
 #### macOS (Homebrew):
 ```sh
-brew install dune
+brew install opam
 ```
 
-After having installed Dune, one can simply use:
+To install all the other dependencies, run:
 ```sh
-dune install ocaml
+opam install ocaml ppx_expect dune 
 ```
 
 ## Usage
