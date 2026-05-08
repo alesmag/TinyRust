@@ -23,7 +23,7 @@
 
 ## About the Project
 
-TinyRust is a group project developed by [Me](https://github.com/alesmag), [Anna Chiara Mameli](https://github.com/Pandanna) and [Alessio Gallo](https://github.com/ale-gll) for the University of Cagliari. 
+TinyRust is a group project developed by [Alessio Giuseppe Muggittu](https://github.com/alesmag), [Anna Chiara Mameli](https://github.com/Pandanna) and [Alessio Gallo](https://github.com/ale-gll) for the University of Cagliari. 
 This project was intended to be a Rust compiler built entirely with OCaml. The scope of this project was essentialy to define an imperative language. 
 
 ## Requirements
